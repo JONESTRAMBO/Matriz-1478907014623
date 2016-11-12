@@ -1,4 +1,39 @@
-﻿<!DOCTYPE html>
+﻿<div class="jumbotron">
+    <h1>HOLA MUNDO</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Leer mas &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
+            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
+            is an ideal platform for building RESTful applications on the .NET Framework.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+    </div>
+</div>
+@model String
+
+<h2>Equipment</h2>
+<div>
+    <ul>
+        <li>@Model</li>
+    </ul>
+</div>
+
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>ASP.NET Core Starter Application</title>
@@ -10,10 +45,13 @@
         {
            Message.Text="Hello World!!";
         }
-
     </script>
 </head>
+
 <body>
+    <form>
+    @model dotnethelloworld.wwwroot.Character
+    <h3>Characters</h3>
     <section id="contents">
         <table>
             <tr>
@@ -23,23 +61,20 @@
                 <td>
                     <h1 id="message">Hello Apayin!</h1>
                     <p class='description'></p> Thank you for creating an <span class="blue">ASP.NET Core Starter Application</span>.
-                    <!--<button onclick="button_Click" runat="server">Click Me!</button>-->
+                    <button onclick="button_Click" runat="server">Click Me!</button>
                 </td>
                 <td>
-                    <!--<h3>Button Example</h3>-->
-                    <!--Click on the submit button.
-                    <br />-->
-                    <button id="Button1"
-                                Text="Submit"
-                                OnClick="SubmitBtn_Click"
-                                runat="server" />
-
+                    
+                    <h2>@Model.Name</h2>
+                    Click on the submit button.
                     <br />
-
+                    <button id="Button1" Text="Submit" OnClick="SubmitBtn_Click" runat="server" />
+                    <br />
                     <asp:label id="Message" runat="server" />
                 </td>
             </tr>
         </table>
     </section>
+    </form>
 </body>
-</html>
+</html>-->
