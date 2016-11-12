@@ -4,6 +4,14 @@
     <title>ASP.NET Core Starter Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script language="C#" runat="server">
+
+        void SubmitBtn_Click(Object sender, EventArgs e)
+        {
+           Message.Text="Hello World!!";
+        }
+
+    </script>
 </head>
 <body>
     <section id="contents">
@@ -15,6 +23,21 @@
                 <td>
                     <h1 id="message">Hello Apayin!</h1>
                     <p class='description'></p> Thank you for creating an <span class="blue">ASP.NET Core Starter Application</span>.
+                    <!--<button onclick="button_Click" runat="server">Click Me!</button>-->
+                </td>
+                <td>
+                    <h3>Button Example</h3>
+
+                    Click on the submit button.<br /><br />
+
+                    <asp:Button id="Button1"
+                                Text="Submit"
+                                OnClick="SubmitBtn_Click"
+                                runat="server" />
+
+                    <br />
+
+                    <asp:label id="Message" runat="server" />
                 </td>
             </tr>
         </table>
